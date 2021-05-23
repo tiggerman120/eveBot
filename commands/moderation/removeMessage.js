@@ -7,7 +7,7 @@ module.exports = {
       return message.reply(`You need to say the id of the message you want to delete.`);
     }
 
-    message.channel.delete
+    message.channel.delete()
 
   }
 }
