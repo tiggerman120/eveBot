@@ -1,4 +1,4 @@
-const { TeamMember } = require("discord.js");
+
 
 module.exports = {
   name: 'prune',
