@@ -3,7 +3,6 @@ module.exports = {
   description: 'kick a user',
   execute(message, args) {
     if (!message.member.hasPermission('KICK_MEMBERS')) return message.reply(`you lack permissions to kick a user`);
-    // console.log(message.guild.members.cache)
     let User = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0])
     
     if (!User) return message.reply(`You need to tag a user in order to kick them!`);
@@ -22,7 +21,6 @@ module.exports = {
       console.error(err)
     })
     
-        // const taggedUser = message.mentions.users.first();
         message.channel.send(`you want to kick: ${User.user.username}`);
 
   }
