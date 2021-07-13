@@ -3,7 +3,7 @@ module.exports = {
   description: 'args-info',
   args: true,
   execute(message, args) {
-    if (argsd[0] === 'foo') {
+    if (args[0] === 'foo') {
       return message.channel.send('bar');
     }
 
